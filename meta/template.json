@@ -1,0 +1,383 @@
+{
+  "id": "4320",
+  "name": "Podcast Landing Page 2.0",
+  "mobile": true,
+  "notes": "Updated official name",
+  "syntax": 4,
+  "version": 1.11,
+  "style": {
+    "replacements": [
+      {
+        "type": "color",
+        "name": "Link",
+        "find": "#0082c5"
+      },
+      {
+        "type": "color",
+        "name": "Link Hover",
+        "find": "#0082c4"
+      },
+      {
+        "type": "color",
+        "name": "Primary Text",
+        "find": "#666666"
+      },
+      {
+        "type": "color",
+        "name": "Secondary Text",
+        "find": "#fffffe"
+      },
+      {
+        "type": "color",
+        "name": "Content Header",
+        "find": "#0082c6"
+      },
+      {
+        "type": "color",
+        "name": "CTA Button Background",
+        "find": "#ffc000"
+      },
+      {
+        "type": "color",
+        "name": "CTA Button Text",
+        "find": "#fffffc"
+      },
+      {
+        "type": "color",
+        "name": "Header Background",
+        "find": "#00629a"
+      },
+      {
+        "type": "color",
+        "name": "Product Photo Background",
+        "find": "#00517f"
+      },
+      {
+        "type": "color",
+        "name": "Main Content Background",
+        "find": "#fffffd"
+      },
+      {
+        "type": "color",
+        "name": "Features Bullet Background",
+        "find": "#ffc001"
+      },
+      {
+        "type": "color",
+        "name": "Features Bullet",
+        "find": "#fffffa"
+      },
+      {
+        "type": "color",
+        "name": "Features Bottom Border",
+        "find": "#d4d4d4"
+      },
+      {
+        "type": "color",
+        "name": "Step Title Background",
+        "find": "#056495"
+      },
+      {
+        "type": "color",
+        "name": "Step Title",
+        "find": "#fffffb"
+      },
+      {
+        "type": "color",
+        "name": "Step Text Background",
+        "find": "#ededed"
+      },
+      {
+        "type": "color",
+        "name": "Step Button Background",
+        "find": "#e0e0e0"
+      },
+      {
+        "type": "color",
+        "name": "Footer Background",
+        "find": "#003c5e"
+      },
+      {
+        "type": "color",
+        "name": "Disclaimer Text",
+        "find": "#999999"
+      },
+      {
+        "type": "color",
+        "name": "Footer Text",
+        "find": "#e3e3e2"
+      }
+    ]
+	},
+	"variables": {
+		"facebookurl": {
+		  "variable": "facebookurl",
+		  "dafault": "",
+		  "name": "The URL to share on Facebook. Leave blank to share the current page."
+		},
+		"twitterurl": {
+		  "variable": "twitterurl",
+		  "dafault": "",
+		  "name": "The URL to share on Twitter. Leave blank to share the current page."
+		},
+		"googleurl": {
+		  "variable": "googleurl",
+		  "dafault": "",
+		  "name": "The URL to share on Google+. Leave blank to share the current page."
+		}
+	},
+	"elements": [
+		{
+			"id": "header",
+			"name": "Page Header",
+			"type": "container"
+		},
+		{
+			"id": "site-header-title",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "site-header-body",
+			"name": "Sub-Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "video-banner",
+			"name": "Video Banner",
+			"type": "container"
+		},
+		{
+			"id": "video-embed-wrap",
+			"name": "Video Embed Section",
+			"type": "container"
+		},
+		{
+			"id": "video-embed",
+			"name": "Video Embed",
+			"type": "video"
+		},
+		{
+			"id": "share-container",
+			"name": "Social Share Section",
+			"type": "container"
+		},
+		{
+		  "id": "share-twitter",
+		  "name": "Twitter",
+		  "type": "dynamic",
+		  "data": {
+		    "variables": ["twitterurl"]
+		  }
+		},
+		{
+		  "id": "share-facebook",
+		  "name": "Facebook",
+		  "type": "dynamic",
+		  "data": {
+		    "variables": ["facebookurl"]
+		  }
+		},
+		{
+		  "id": "share-google",
+		  "name": "Google+",
+		  "type": "dynamic",
+		  "data": {
+		    "variables": ["googleurl"]
+		  }
+		},
+		{
+			"id": "product",
+			"name": "Product Section",
+			"type": "container"
+		},
+		{
+			"id": "product-photo",
+			"name": "Product Image",
+			"type": "image",
+			"data": {
+				"max-width": 151
+			}
+		},
+		{
+			"id": "product-text",
+			"name": "Text",
+			"type": "text"
+		},
+		{
+			"id": "main-content",
+			"name": "Content Section",
+			"type": "container"
+		},
+		{
+			"id": "features",
+			"name": "Features Section",
+			"type": "container"
+		},
+		{
+			"id": "features-title",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "features-list",
+			"name": "Bulleted List Text",
+			"type": "text"
+		},
+		{
+			"id": "steps",
+			"name": "Steps Section",
+			"type": "container"
+		},
+		{
+			"id": "steps-title",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "step-1",
+			"name": "First Step Section",
+			"type": "container"
+		},
+		{
+			"id": "step-1-title",
+			"name": "Title Text",
+			"type": "text"
+		},
+		{
+			"id": "step-1-body",
+			"name": "Body Text",
+			"type": "text"
+		},
+		{
+			"id": "step-1-btn-wrap",
+			"name": "Button Section",
+			"type": "container"
+		},
+		{
+			"id": "step-1-btn",
+			"name": "Image Button",
+			"type": "image-link",
+			"data": {
+				"max-width": 200
+			}
+		},
+		{
+			"id": "step-1-arrow",
+			"name": "Arrow Image",
+			"type": "image",
+			"data": {
+				"max-width": 60
+			}
+		},
+		{
+			"id": "step-2",
+			"name": "Second Step Section",
+			"type": "container"
+		},
+		{
+			"id": "step-2-title",
+			"name": "Title Text",
+			"type": "text"
+		},
+		{
+			"id": "step-2-body",
+			"name": "Body Text",
+			"type": "text"
+		},
+		{
+			"id": "step-2-btn-wrap",
+			"name": "Button Section",
+			"type": "container"
+		},
+		{
+			"id": "step-2-btn",
+			"name": "Image Button",
+			"type": "image-link",
+			"data": {
+				"max-width": 200
+			}
+		},
+		{
+			"id": "step-2-arrow",
+			"name": "Arrow Image",
+			"type": "image",
+			"data": {
+				"max-width": 60
+			}
+		},
+		{
+			"id": "step-3",
+			"name": "Third Step Section",
+			"type": "container"
+		},
+		{
+			"id": "step-3-title",
+			"name": "Title Text",
+			"type": "text"
+		},
+		{
+			"id": "cta",
+			"name": "Call to Action Section",
+			"type": "container"
+		},
+		{
+			"id": "step-cta-btn",
+			"name": "CTA Button",
+			"type": "link",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+			"id": "step-cta-link",
+			"name": "CTA Link",
+			"type": "link",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+			"id": "step-disclaimer",
+			"name": "Disclaimer Section",
+			"type": "container"
+		},
+		{
+			"id": "disclaimer-img",
+			"name": "Lock Image",
+			"type": "image",
+			"data": {
+				"max-width": 15
+			}
+		},
+		{
+			"id": "disclaimer-text",
+			"name": "Disclaimer Text",
+			"type": "text"
+		},
+		{
+			"id": "step-product-photo-wrap",
+			"name": "Product Image Section",
+			"type": "container"
+		},
+		{
+			"id": "step-product-photo",
+			"name": "Product Image",
+			"type": "image",
+			"data": {
+				"max-width": 90
+			}
+		},
+		{
+			"id": "footer",
+			"name": "Footer",
+			"type": "container"
+		},
+		{
+			"id": "fineprint",
+			"name": "Copyright Text",
+			"type": "text"
+		}
+  ],
+	"form": {}
+}
